@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu nombre · Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#inicio" class="activo">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#detalles">Detalles</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main class="track" id="track">
+    <section class="panel" id="inicio">
+      <figure class="marco">
+        <img src="foto.png" alt="Retrato con suéter rojo de margaritas, en un cuarto lleno de objetos de colores">
+      </figure>
+      <div class="texto">
+        <h1>Hola, soy<br>Tu nombre.</h1>
+        <p class="lead">Escribe aquí una frase corta sobre lo que haces. Desliza hacia la derecha para seguir.</p>
+      </div>
+    </section>
+
+    <section class="panel" id="sobre-mi">
+      <div class="texto estrecho">
+        <h2>Sobre mí</h2>
+        <p>Cuenta en dos o tres frases quién eres, dónde estás y qué te gusta hacer. Este texto es un ejemplo: reemplázalo con el tuyo.</p>
+        <p>Una segunda idea corta ayuda a que la lectura no pase de unas pocas líneas.</p>
+      </div>
+    </section>
+
+    <section class="panel ancho" id="detalles">
+      <h2 class="vertical">Detalles</h2>
+      <div class="recortes">
+        <figure><div class="recorte rostro" role="img" aria-label="Detalle del rostro"></div><figcaption>La mirada</figcaption></figure>
+        <figure><div class="recorte fondo" role="img" aria-label="Detalle de la pared con flores y un peluche"></div><figcaption>El fondo</figcaption></figure>
+        <figure><div class="recorte textura" role="img" aria-label="Detalle del suéter con margaritas"></div><figcaption>Las margaritas</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="panel" id="contacto">
+      <div class="texto estrecho">
+        <h2>Contacto</h2>
+        <p>¿Quieres escribirme? Cambia estos datos por los tuyos.</p>
+        <p><a class="boton" href="mailto:correo@ejemplo.com">Enviar correo</a></p>
+        <button class="boton secundario" id="volver" type="button">Volver al inicio</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="progreso" aria-hidden="true"><span id="barra"></span></div>
+  <script src="script.js"></script>
+</body>
+</html>
