@@ -2,59 +2,134 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estrella · Portafolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Estrella Ocaña, estudiante de Ingeniería Informática y desarrolladora de software.">
+  <title>Estrella Ocaña | Desarrolladora de Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav" aria-label="Secciones">
-    <a href="#inicio" class="activo">Inicio</a>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#detalles">Detalles</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <div class="background-grid" aria-hidden="true"></div>
 
-  <main class="track" id="track">
-    <section class="panel" id="inicio">
-      <figure class="marco">
-        <img src="foto.png" alt="Retrato con suéter rojo de margaritas, en un cuarto lleno de objetos de colores">
-      </figure>
-      <div class="texto">
-        <h1>Hola, soy<br>Estrella Ocaña</h1>
-        <p class="lead">Desarrolladora de software</p>
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="Inicio">EO<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio" class="activo">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="cv-mini" href="mailto:estrellasantos160@gmail.com?subject=Contacto%20profesional">Disponible para oportunidades</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Ingeniería Informática · Desarrollo de software</p>
+        <h1>Estrella <strong>Ocaña</strong></h1>
+        <p class="hero-role">Estudiante de Ingeniería Informática <span>·</span> Desarrolladora de Software</p>
+        <p class="hero-text">“Tú lo sueñas, yo puedo hacerlo posible.”</p>
+        <p class="hero-description">Me apasiona transformar ideas en soluciones digitales. Disfruto aprender, resolver problemas y descubrir nuevas formas de utilizar la tecnología.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">Ver proyectos <span>↗</span></a>
+          <a class="button ghost" href="mailto:estrellasantos160@gmail.com">Contactarme</a>
+        </div>
+        <div class="availability"><i></i> Abierta a oportunidades remotas y proyectos</div>
+      </div>
+
+      <div class="hero-photo reveal delay-1">
+        <div class="photo-frame">
+          <span class="corner corner-tl"></span><span class="corner corner-br"></span>
+          <img src="foto.png" alt="Fotografía de Estrella Ocaña">
+        </div>
+        <div class="photo-card"><strong>01</strong><span>Portafolio<br>personal</span></div>
       </div>
     </section>
 
-    <section class="panel" id="sobre-mi">
-      <div class="texto estrecho">
-        <h2>Sobre mí</h2>
-        <p>Dime lo que suñas para hacerlo realidad!, Puedes localizarme desde cualquier parte del mundo y me encantaria ayudarte!!</p>
+    <section class="section about" id="sobre-mi">
+      <div class="section-label">01 / SOBRE MÍ</div>
+      <div class="about-content">
+        <div>
+          <p class="eyebrow">Perfil profesional</p>
+          <h2>Curiosidad que<br><span>se convierte en código.</span></h2>
+        </div>
+        <div class="about-text">
+          <p>Soy estudiante de <strong>Ingeniería Informática</strong>, enfocada en el desarrollo de software y en seguir construyendo una base sólida en programación, bases de datos y tecnologías web.</p>
+          <p>El mundo de la programación me parece fascinante. Me gusta aprender haciendo, enfrentar problemas nuevos y buscar siempre el lado positivo de cada reto.</p>
+          <p class="quote">“Solo encuentra el lado positivo.”</p>
+        </div>
       </div>
     </section>
 
-    <section class="panel ancho" id="detalles">
-      <h2 class="vertical">Detalles</h2>
-      <div class="recortes">
-        <figure><div class="recorte rostro" role="img" aria-label="Detalle del rostro"></div><figcaption>La mirada</figcaption></figure>
-        <figure><div class="recorte fondo" role="img" aria-label="Detalle de la pared con flores y un peluche"></div><figcaption>El fondo</figcaption></figure>
-        <figure><div class="recorte textura" role="img" aria-label="Detalle del suéter con margaritas"></div><figcaption>Las margaritas</figcaption></figure>
+    <section class="section skills" id="habilidades">
+      <div class="section-label">02 / HABILIDADES</div>
+      <div class="skills-head">
+        <div>
+          <p class="eyebrow">Tecnologías</p>
+          <h2>Lo que puedo<br><span>construir.</span></h2>
+        </div>
+        <p>Una selección de lenguajes, herramientas y áreas que forman parte de mi preparación como desarrolladora.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="number">01</span><h3>Desarrollo</h3><div class="tags"><span>Java</span><span>Python</span><span>C / C++</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="skill-card"><span class="number">02</span><h3>Datos</h3><div class="tags"><span>SQL</span><span>MySQL</span><span>SQL Server</span><span>Modelado</span><span>Diseño de BD</span></div></article>
+        <article class="skill-card"><span class="number">03</span><h3>Herramientas</h3><div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>NetBeans</span><span>Arduino IDE</span><span>Proteus</span></div></article>
+        <article class="skill-card"><span class="number">04</span><h3>Entornos</h3><div class="tags"><span>Windows</span><span>Ubuntu</span><span>Linux</span><span>Software libre</span><span>Terminal</span></div></article>
       </div>
     </section>
 
-    <section class="panel" id="contacto">
-      <div class="texto estrecho">
-        <h2>Contacto</h2>
-        <p>¿quieres contactarme? 9687442557.</p>
-        <p><a class="boton" href="mestrella santos 160@gmail.com">Enviar correo</a></p>
-        <button class="boton secundario" id="volver" type="button">Volver al inicio</button>
+    <section class="section projects" id="proyectos">
+      <div class="section-label">03 / PROYECTOS</div>
+      <div class="projects-head"><p class="eyebrow">Trabajo destacado</p><h2>Ideas que toman<br><span>forma.</span></h2></div>
+      <div class="project-list">
+        <article class="project">
+          <div class="project-index">01</div>
+          <div><h3>Incubadora inteligente</h3><p>Sistema automatizado para el control de temperatura, humedad, ventilación y movimiento de huevos. Proyecto de electrónica y programación con microcontrolador, sensores, LCD, relevadores y servomotor.</p><div class="project-tags"><span>Microcontroladores</span><span>C</span><span>Sensores</span><span>Automatización</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-index">02</div>
+          <div><h3>Aplicaciones de gestión</h3><p>Desarrollo de aplicaciones académicas orientadas al registro, consulta y organización de información, utilizando programación, interfaces gráficas y bases de datos.</p><div class="project-tags"><span>Java</span><span>SQL</span><span>Interfaces</span><span>Bases de datos</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-index">03</div>
+          <div><h3>Participación en ROBOT CITCA</h3><p>Participación en una competencia de robótica, experiencia que permitió aplicar conocimientos de programación, electrónica, trabajo en equipo y resolución de problemas bajo presión.</p><div class="project-tags"><span>Robótica</span><span>Programación</span><span>Electrónica</span><span>Trabajo en equipo</span></div></div>
+        </article>
       </div>
+    </section>
+
+    <section class="section education" id="formacion">
+      <div class="section-label">04 / FORMACIÓN</div>
+      <div class="education-layout">
+        <div><p class="eyebrow">Formación académica</p><h2>Aprender para<br><span>seguir creciendo.</span></h2></div>
+        <div class="timeline">
+          <div class="timeline-item"><span>2022 — 2026</span><h3>Ingeniería Informática</h3><p>Instituto Tecnológico Superior de Cintalapa</p><small>Enfoque en desarrollo de software, programación, bases de datos, sistemas y tecnologías de información.</small></div>
+          <div class="timeline-item"><span>Actualmente</span><h3>Aprendizaje continuo</h3><p>Programación · Linux · Git/GitHub · Desarrollo web · Bases de datos</p><small>Interés constante por adquirir nuevas herramientas y fortalecer habilidades técnicas.</small></div>
+        </div>
+      </div>
+      <div class="cert-note"><span>+</span><div><strong>Certificaciones y cursos</strong><p>Esta sección está preparada para agregar certificaciones reales conforme las obtengas. Es mejor mantener el CV verificable que inventar credenciales.</p></div></div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-label">05 / CONTACTO</div>
+      <div class="contact-layout">
+        <div><p class="eyebrow">¿Tienes un proyecto?</p><h2>Hablemos de<br><span>lo que sigue.</span></h2><p class="contact-intro">Busco seguir mejorando mi experiencia como desarrolladora, participar en proyectos reales y aportar soluciones a problemas importantes.</p></div>
+        <div class="contact-box">
+          <a href="mailto:estrellasantos160@gmail.com"><small>EMAIL</small><strong>estrellasantos160@gmail.com</strong></a>
+          <a href="tel:+529687442557"><small>TELÉFONO</small><strong>+52 968 744 2557</strong></a>
+          <div><small>MODALIDAD</small><strong>Remota · Disponible internacionalmente</strong></div>
+          <div class="contact-links"><span>GitHub: próximamente</span><span>LinkedIn: próximamente</span></div>
+        </div>
+      </div>
+      <footer><span>© 2026 Estrella Ocaña</span><span>Diseñado y desarrollado con código.</span></footer>
     </section>
   </main>
 
-  <div class="progreso" aria-hidden="true"><span id="barra"></span></div>
+  <div class="progress"><span id="barra"></span></div>
+  <button class="top-button" id="topButton" aria-label="Volver arriba">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
