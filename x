@@ -23,7 +23,7 @@
         <img src="foto.png" alt="Retrato con suéter rojo de margaritas, en un cuarto lleno de objetos de colores">
       </figure>
       <div class="texto">
-        <h1>Hola, soy<br>Estrella</h1>
+        <h1>Hola, soy<br>Tu nombre.</h1>
         <p class="lead">Escribe aquí una frase corta sobre lo que haces. Desliza hacia la derecha para seguir.</p>
       </div>
     </section>
